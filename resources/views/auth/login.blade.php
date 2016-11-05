@@ -22,7 +22,7 @@
                    <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#xf0e0; E-mail">
                </div>
                <div class="input-group input-group-lg">
-                   <input type="password" class="form-control" name="password" id="password" placeholder="&#xf023;  Password">
+                   <input type="password" class="form-control" name="password" id="password" placeholder="&#xf084;  Pass Word">
                </div>
                <!-- <div class="input-group input-group-sm">
                    <span class="input-group-addon">
