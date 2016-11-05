@@ -1,4 +1,4 @@
-
+/*
 /* 全てのmargin, paddingを0に */
 
 * {
@@ -9,10 +9,6 @@
 .inner li {
     padding-right: 66px;
 }
-
-/*h1 li {
-    margin-right: 50px;
-}*/
 
 h1 a:link {
     color: #FFFFFF;
@@ -38,85 +34,31 @@ body {
     font-family: mplus-1c-regular;
 }
 
-.header_inner {
-    margin: 0 auto;
-    padding: 5px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* 以下header部分*/
+
+a.logo-around{
+    padding: 0px 30px;
 }
 
-.header_inner li:not(#last) {
-    padding-right: 66px;
+img#logo{
+    width:70px;
+    height:50px;
 }
-/* 以下header部分 */
-
-.header {
-    position: relative;
-    width: 100%;
+li.menu-list{
+    padding-right: 30px;
 }
 
-/* 以下nav部分 */
-
-.nav {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    z-index: 1;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 0px 0px #DFE3EB;
+li#user-info{
+    line-height:20px;
+    padding: 15px;
 }
 
-/*.nav h {
-    color: #ad93db;
-    margin-left: 47px;
-    font-size: 36px;
-}*/
-
-.nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav li {
-    margin: 10px;
-    list-style: none;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 17px;
-}
-
-.nav a {
-    color: #767676;
-    text-decoration: none;
-}
-
-img.logo {
-    /*color: #ad93db;*/
-    /*background-color: #ad93db;*/
-    width: 6%;
-    height: 6%;
-}
-
-.nav p {
-    color: #767676;
-    font-size: 15px;
-}
-
-.user_info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.user_info #log_info{
-    padding-left: 30px;
+li#log-info{
+    padding-right: 15px;
 }
 
 /* 以下container部分*/
+
 .container{
 	display: flex;
 	justify-content: center;
@@ -125,7 +67,6 @@ img.logo {
 
 .inner{
 	display: flex;
-	/*flex-direction: row;*/
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 10px;
@@ -168,11 +109,12 @@ img.logo {
 }
 
 /* 以下timelines部分 */
+
 .nc_inner{
     display: flex;
-        padding: 20px 0px;
-        justify-content: center;
-        padding: calc((100vh - 322px) / 2) 0px;
+    padding: 20px 0px;
+    justify-content: center;
+    padding: calc((100vh - 322px) / 2) 0px;
 }
 
 .tl_inner{
