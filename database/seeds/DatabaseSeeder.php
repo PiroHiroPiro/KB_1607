@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\User;
 use App\Timelines;
 use App\Contents;
+use App\Supports;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call('UserTableSeeder');
         $this->call('TimelinesTableSeeder');
         $this->call('ContentsTableSeeder');
+        $this->call('SupportsTableSeeder');
 
         Model::reguard();
     }
@@ -179,6 +181,35 @@ class ContentsTableSeeder extends Seeder
             "picture4"=>"/img/IAN1.JPG",
             "picture5"=>"/img/IAN1.JPG",
             "video"=>"/img/IAN1.JPG"
+		]);
+	}
+
+}
+
+class SupportsTableSeeder extends Seeder
+{
+	public function run()
+	{
+		DB::table('Supports')->delete();
+		Supports::create([
+			"user_id"=>1,
+            "content_id"=>2,
+            "money"=>1000000
+		]);
+        Supports::create([
+			"user_id"=>2,
+            "content_id"=>3,
+            "money"=>1000000
+		]);
+        Supports::create([
+			"user_id"=>2,
+            "content_id"=>1,
+            "money"=>1000000
+		]);
+        Supports::create([
+			"user_id"=>3,
+            "content_id"=>3,
+            "money"=>1000000
 		]);
 	}
 
