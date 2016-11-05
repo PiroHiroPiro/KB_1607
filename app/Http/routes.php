@@ -14,10 +14,8 @@
 Route::get('/', function () {
     return view('top');
 });
+Route::controller('/content', 'ContentsController');
 Route::controller('/timeline', 'TimelinesController');
-Route::get('/content', function () {
-		return view('content');
-});
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
