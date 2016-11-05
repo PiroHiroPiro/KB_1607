@@ -14,9 +14,7 @@
 Route::get('/', function () {
     return view('top');
 });
-Route::get('/timeline', function () {
-		return view('timeline');
-})->middleware('auth');
+Route::controller('/timeline', 'TimelinesController');
 Route::get('/content', function () {
 		return view('content');
 });
