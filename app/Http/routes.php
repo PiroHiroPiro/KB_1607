@@ -17,9 +17,7 @@ Route::get('/', function () {
 Route::get('/timeline', function () {
 		return view('timeline');
 })->middleware('auth');
-Route::get('/content', function () {
-		return view('content');
-});
+Route::controller('/content', 'ContentsController');
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
