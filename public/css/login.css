@@ -1,0 +1,43 @@
+
+/* 全てのmargin, paddingを0に */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: mplus-1c-regular;
+}
+
+/* login */
+.login_inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: calc((100vh - 480px) / 2);
+}
+
+.login_inner h1{
+	font-size: 100px;
+	margin-bottom: 100px;
+}
+
+.login_inner form{
+	width: 100%;
+}
+
+.form_inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-group{
+	margin-bottom: 10px;
+	width: 40%;
+}
+
+.form_inner input{
+	font-family: FontAwesome;
+}
