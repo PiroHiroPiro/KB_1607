@@ -9,6 +9,11 @@
 @endsection
 
 @section('content')
+
+	<!-- <div class="image">
+		<img src="/img/000.jpeg" class="gazou"/>
+	</div> -->
+
 	<div class="inner">
 	    <div id="wrapper">
 	      <input type="radio" name="slideshow" id="switch1" checked>
@@ -55,20 +60,38 @@
 
 
 	    <div class="description">
-      		<h1><span>title</span></h1>
-      		<p>title<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+	    	<div class="description-item">
+	    		<div class="titlee">
+		      		<div class="ti"><h1><i class="fa fa-tag" aria-hidden="true"></i><br>Title</h1></div>
+		      		<div><p>title<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></div>
+		      	</div>
+		     </div>
 
-      		<h1><span>Name</span></h1>
-      		<p>name</p>
 
-      		<h1><span>Introduce</span></h1>
-      		<p>introduce</p>
+		     <div class="description-item">
+		     	<div class="namee">
+		     		<div><p>name<br></p></div>
+		      		<div class="na"><h1><i class="fa fa-tag" aria-hidden="true"></i><br>Name</h1></div>
+		      	</div>
+		    </div>
+
+
+		    <div class="description-item">
+		    	<div class="introduce">
+		      		<div class="intro"><h1><i class="fa fa-tag" aria-hidden="true"></i><br>Introduce</h1></div>
+		      		<div><p>introduce</p></div>
+		      	</div>
+		    </div>
 	    </div>
 
 	    <div class="btn-group" role="group">
-	        <button type="button" class="btn button">応援する</button>
+	        <button type="button" class="btn button"><i class="fa fa-gift"></i>  応援する  <i class="fa fa-gift"></i></button>
 
-	        <p><a class="btn btn-white btn-lg btn-ghost" href="#" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Learn more</a></p>
+<!-- <a href="#" class="btn">Purchase Tickets</a> -->
+	    
+
+	        <!-- <p><a class="btn btn-white btn-lg btn-ghost" href="#" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Learn more</a></p> -->
 	    </div>
+	       <!-- <img src="/img/b_simple_115_0L.png" class="gazouwaku"/> -->
 	</div>
 @endsection

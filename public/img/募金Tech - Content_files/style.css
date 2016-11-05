@@ -1,0 +1,195 @@
+
+/* 全てのmargin, paddingを0に */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inner li {
+    padding-right: 66px;
+}
+
+/*h1 li {
+    margin-right: 50px;
+}*/
+
+h1 a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body {
+    font-family: mplus-1c-regular;
+}
+
+.header_inner {
+    margin: 0 auto;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_inner li:not(#last) {
+    padding-right: 66px;
+}
+/* 以下header部分 */
+
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+/* 以下nav部分 */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px 0px #DFE3EB;
+}
+
+/*.nav h {
+    color: #ad93db;
+    margin-left: 47px;
+    font-size: 36px;
+}*/
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    margin: 10px;
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.nav a {
+    color: #767676;
+    text-decoration: none;
+}
+
+img.logo {
+    /*color: #ad93db;*/
+    /*background-color: #ad93db;*/
+    width: 6%;
+    height: 6%;
+}
+
+.nav p {
+    color: #767676;
+    font-size: 15px;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_info #log_info{
+    padding-left: 30px;
+}
+
+/* 以下container部分*/
+.container{
+	display: flex;
+	justify-content: center;
+    padding-top: 60px;
+}
+
+.inner{
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px;
+	max-width: 960px;
+    padding: 20px 0px;
+}
+
+.content{
+	margin: 5px 10px 20px 10px;
+}
+
+.content:hover{
+	background-color: grey;
+	border-radius: 10px;
+	transition: 0.4s;
+}
+
+.content img{
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.content h2{
+	text-align: center;
+	font-size: 24px;
+}
+
+.content p{
+	text-align: center;
+}
+
+/* 以下footer部分 */
+
+.footer {
+    background-color: #FFF;/*#ad93db;*/
+    clear: both;
+    height: 61px;
+    margin-top: 36px;
+    margin: 36 0;
+}
+
+.footer-item {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.footer-item h3,
+.footer-item p,
+.footer-item a {
+    color: #FFF;
+}
+
+.copyright {
+    display: block;
+    padding: 20px;
+    background-color: #FFFAF0;
+    color: #FFF;
+    clear: both;
+    text-align: center;
+}
+
+.copyright a{
+    color: #696969;
+}
