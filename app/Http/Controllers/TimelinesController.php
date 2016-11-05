@@ -7,11 +7,19 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Auth;
+
+use App\Timelines;
+
 class TimelinesController extends Controller
 {
-    public function getIndex()
+    public function getIndex(Request $request)
     {
-        return view('timeline');
+				if(Auth::check()){
+					$id = Auth::user()->id;
+					$Timelines = Timelines::all();
+        	return view('timeline', ["Timelines" => $Timelines]);
+				}
     }
 
     public function __construct()
