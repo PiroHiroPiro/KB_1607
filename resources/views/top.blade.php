@@ -7,13 +7,15 @@
 @section('content')
     <div class="inner">
         <?php foreach ($Contents as $Content) { ?>
-            <a href="/content/view/<?php echo $Content->id ?>">
-                <div class="content">
-                    <img src="<?php echo $Content->picture1 ?>">
-                    <h2><?php echo $Content->title ?></h2>
-                    <p><?php echo $Content->name ?></p>
-                </div>
-            </a>
+            <div class="content_around">
+                <a href="/content/view/<?php echo $Content->id ?>">
+                    <div class="content">
+                        <img src="<?php echo $Content->picture1 ?>">
+                        <h2><?php echo $Content->title ?></h2>
+                        <p><?php echo $Content->name ?></p>
+                    </div>
+                </a>
+            </div>
         <?php } ?>
     </div>
 @endsection
