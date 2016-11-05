@@ -6,11 +6,11 @@
 
 @section('content')
     <div class="inner">
-        <?php for ($i = 0; $i < 10; $i++) { ?>
+        <?php foreach ($Contents as $Content) { ?>
             <div class="content">
-                <img src="<?php echo "img/IAN.JPG" ?>">
-                <h2><?php echo "Plz money!" ?></h2>
-                <p><?php echo "Brian" ?></p>
+                <img src="<?php echo $Content->picture1 ?>">
+                <h2><?php echo $Content->title ?></h2>
+                <p><?php echo $Content->name ?></p>
             </div>
         <?php } ?>
     </div>
