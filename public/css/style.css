@@ -54,6 +54,7 @@ body {
 .header {
     position: relative;
     width: 100%;
+    z-index: 2;
 }
 
 /* 以下nav部分 */
@@ -161,7 +162,7 @@ img.logo {
 /* 以下footer部分 */
 
 .footer {
-    background-color: #ad93db;
+    background-color: #FFF;/*#ad93db;*/
     clear: both;
     height: 61px;
     margin-top: 36px;
@@ -177,14 +178,18 @@ img.logo {
 .footer-item h3,
 .footer-item p,
 .footer-item a {
-    color: #fff;
+    color: #FFF;
 }
 
 .copyright {
     display: block;
     padding: 20px;
-    background-color: #ad93db;
-    color: #fff;
+    background-color: #FFFAF0;
+    color: #FFF;
     clear: both;
     text-align: center;
+}
+
+.copyright a{
+    color: #696969;
 }
