@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use App\User;
 use App\Timelines;
+use App\Contents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,6 +20,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call('UserTableSeeder');
         $this->call('TimelinesTableSeeder');
+        $this->call('ContentsTableSeeder');
 
         Model::reguard();
     }
@@ -102,6 +104,81 @@ class TimelinesTableSeeder extends Seeder
             "picture4"=>"/img/IAN.JPG",
             "picture5"=>"/img/IAN.JPG",
             "video"=>"/img/IAN.JPG"
+		]);
+	}
+
+}
+
+class ContentsTableSeeder extends Seeder
+{
+	public function run()
+	{
+		DB::table('Contents')->delete();
+		Contents::create([
+			"name"=>"Iam Brison",
+			"title"=>"Plz Money...",
+			"description"=>"お金が欲しい。。。。。。欲しいよおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお",
+            "picture1"=>"/img/IAN2.JPG",
+            "picture2"=>"/img/IAN2.JPG",
+            "picture3"=>"/img/IAN2.JPG",
+            "picture4"=>"/img/IAN2.JPG",
+            "picture5"=>"/img/IAN2.JPG",
+            "video"=>"/img/IAN2.JPG"
+		]);
+        Contents::create([
+			"name"=>"Ian",
+			"title"=>"シリコンバレーに行きたい",
+			"description"=>"飛行機代が出せません、、、誰かお願いします。",
+            "picture1"=>"/img/IAN.JPG",
+            "picture2"=>"/img/IAN.JPG",
+            "picture3"=>"/img/IAN.JPG",
+            "picture4"=>"/img/IAN.JPG",
+            "picture5"=>"/img/IAN.JPG",
+            "video"=>"/img/IAN.JPG"
+		]);
+        Contents::create([
+			"name"=>"Buraison",
+			"title"=>"だるいいいい",
+			"description"=>"aaaaaaassssssdfdsgdfsgdfslgdfsigisfdn",
+            "picture1"=>"/img/IAN3.JPG",
+            "picture2"=>"/img/IAN3.JPG",
+            "picture3"=>"/img/IAN3.JPG",
+            "picture4"=>"/img/IAN3.JPG",
+            "picture5"=>"/img/IAN3.JPG",
+            "video"=>"/img/IAN3.JPG"
+		]);
+        Contents::create([
+			"name"=>"hiro",
+			"title"=>"help me",
+			"description"=>"大dbvfbdsヴィウダhsヴィm杯smふはs痔v日青hみhヴォアdふmhv",
+            "picture1"=>"/img/IAN.JPG",
+            "picture2"=>"/img/IAN2.JPG",
+            "picture3"=>"/img/IAN3.JPG",
+            "picture4"=>"/img/IAN.JPG",
+            "picture5"=>"/img/IAN2.JPG",
+            "video"=>"/img/IAN3.JPG"
+		]);
+        Contents::create([
+			"name"=>"イアンノーネ",
+			"title"=>"adsf",
+			"description"=>"dfadgafasdfasd",
+            "picture1"=>"/img/IAN2.JPG",
+            "picture2"=>"/img/IAN2.JPG",
+            "picture3"=>"/img/IAN2.JPG",
+            "picture4"=>"/img/IAN2.JPG",
+            "picture5"=>"/img/IAN2.JPG",
+            "video"=>"/img/IAN2.JPG"
+		]);
+        Contents::create([
+			"name"=>"青shv",
+			"title"=>"fasdfasdf",
+			"description"=>"asdfasdfas",
+            "picture1"=>"/img/IAN1.JPG",
+            "picture2"=>"/img/IAN1.JPG",
+            "picture3"=>"/img/IAN1.JPG",
+            "picture4"=>"/img/IAN1.JPG",
+            "picture5"=>"/img/IAN1.JPG",
+            "video"=>"/img/IAN1.JPG"
 		]);
 	}
 
