@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{{asset('css/login.css')}}}">
+    <link rel="stylesheet" href="{{{asset('css/auth.css')}}}">
 </head>
 
 <body>
@@ -19,10 +19,10 @@
            <div class="form_inner">
                {!! csrf_field() !!}
                <div class="input-group input-group-lg">
-                   <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#xf0e0; e-mail">
+                   <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#xf0e0; E-mail">
                </div>
                <div class="input-group input-group-lg">
-                   <input type="password" class="form-control" name="password" id="password" placeholder="&#xf023;  Pass Word">
+                   <input type="password" class="form-control" name="password" id="password" placeholder="&#xf023;  Password">
                </div>
                <!-- <div class="input-group input-group-sm">
                    <span class="input-group-addon">
@@ -34,6 +34,7 @@
                </div>
            </div>
        </form>
+        <p><a href="/signup">新規登録はこちら</a></p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>

@@ -31,6 +31,31 @@ body {
 	width: 100%;
 }
 
+/* signup*/
+.signup_inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: calc((100vh - 650px) / 2);
+}
+
+.signup_inner h1{
+	font-size: 100px;
+	margin-bottom: 100px;
+}
+
+.signup_inner .logo{
+	margin-bottom: 30px;
+}
+
+.signup_inner form{
+	width: 100%;
+}
+
+p{
+    margin-top: 20px;
+}
+
 .form_inner{
 	display: flex;
 	flex-direction: column;
