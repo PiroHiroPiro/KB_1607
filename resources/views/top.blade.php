@@ -7,7 +7,7 @@
 @section('content')
     <div class="inner">
         <?php foreach ($Contents as $Content) { ?>
-            <a href="/contents/<?php echo ?>">
+            <a href="/contents/<?php echo ""; ?>">
                 <div class="content">
                     <img src="<?php echo $Content->picture1 ?>">
                     <h2><?php echo $Content->title ?></h2>
