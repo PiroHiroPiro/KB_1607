@@ -159,6 +159,13 @@ img.logo {
 }
 
 /* 以下timelines部分 */
+.nc_inner{
+    display: flex;
+        padding: 20px 0px;
+        justify-content: center;
+        padding: calc((100vh - 322px) / 2) 0px;
+}
+
 .tl_inner{
     display: flex;
     align-items: flex-start;
@@ -168,6 +175,10 @@ img.logo {
     padding: 20px 0px;
 }
 
+img.no_content{
+    width: 600px;
+    height: 166px;
+}
 img.tl_img{
     width: 400px;
     height: 300px;
