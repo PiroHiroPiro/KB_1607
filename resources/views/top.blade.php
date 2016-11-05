@@ -5,36 +5,13 @@
 @section('title', 'Top')
 
 @section('content')
-<div class="inner">
-        <div class="content">
-            <img src="img/IAN.JPG">
-            <h2>紹介</h2>
-            <p>名前</p>
-        </div>
-        <div class="content">
-            <img src="img/IAN.JPG">
-            <h2>紹介</h2>
-            <p>名前</p>
-        </div>
-        <div class="content">
-            <img src="img/IAN.JPG">
-            <h2>紹介</h2>
-            <p>名前</p>
-        </div>
-        <div class="content">
-            <img src="img/IAN.JPG">
-            <h2>紹介</h2>
-            <p>名前</p>
-        </div>
-        <div class="content">
-            <img src="img/IAN.JPG">
-            <h2>紹介</h2>
-            <p>名前</p>
-        </div>
-        <div class="content">
-            <img src="img/IAN.JPG">
-            <h2>紹介</h2>
-            <p>名前</p>
-        </div>
+    <div class="inner">
+        <?php for ($i = 0; $i < 10; $i++) { ?>
+            <div class="content">
+                <img src="<?php echo "img/IAN.JPG" ?>">
+                <h2><?php echo "Plz money!" ?></h2>
+                <p><?php echo "Brian" ?></p>
+            </div>
+        <?php } ?>
     </div>
 @endsection
