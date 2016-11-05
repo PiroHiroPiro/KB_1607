@@ -13,7 +13,8 @@
 
 <body>
     <div class="login_inner">
-       <h1>募金Tech</h1>
+       <!-- <h1>募金Tech</h1> -->
+       <img class="logo" src="/img/logo-sample.png">
        <form method="POST" action="/auth/login">
            <div class="form_inner">
                {!! csrf_field() !!}

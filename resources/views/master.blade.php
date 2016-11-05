@@ -9,8 +9,9 @@
     <meta name="Author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{{asset('css/style.css')}}}">
+    @yield('head')
 </head>
 
 <body>
@@ -18,18 +19,27 @@
     <div class="header">
         <div class="nav">
             <div class="header_inner">
-                <h1><a href="/" class="logo">募金Tech</a></h1>
+                <!-- <h1><a href="/" class="logo">募金Tech</a></h1> -->
+                <img class="logo" src="/img/logo-sample.png" href="">
                 <ul>
                     <li><a href="/"><i class="fa fa-home"></i> Top</a></li>
-                    <li><a href="/timeline"><i class="fa fa-th-large"></i> TimeLine</a></li>
+                    <li id="last"><a href="/timeline"><i class="fa fa-th-large"></i> TimeLine</a></li>
                 </ul>
-                <p>
-                    @if (Auth::guest())
-                        <a href="/auth/login"><i class="fa fa-sign-in"></i> Login</a>
-                    @else
-                        <a href="/auth/logout"><i class="fa fa-sign-out"></i> Logout</a>
-                    @endif
-                </p>
+                <div class="user_info">
+                    <p>
+                        @if (Auth::guest())
+                        @else
+                            <i class="fa fa-user"></i> <?php echo "Ian"; ?>
+                        @endif
+                    </p>
+                    <p id="log_info">
+                        @if (Auth::guest())
+                            <a href="/auth/login"><i class="fa fa-sign-in"></i> Login</a>
+                        @else
+                            <a href="/auth/logout"><i class="fa fa-sign-out"></i> Logout</a>
+                        @endif
+                    </p>
+                </div>
             </div>
         </div>
     </div>
