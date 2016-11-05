@@ -29,7 +29,7 @@
                     <p>
                         @if (Auth::guest())
                         @else
-                            <i class="fa fa-user"></i> <?php echo "Ian"; ?>
+                            <i class="fa fa-user"></i> {{ Auth::user()->name }} さん
                         @endif
                     </p>
                     <p id="log_info">
