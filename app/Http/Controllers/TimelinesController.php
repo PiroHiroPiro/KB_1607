@@ -8,8 +8,9 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Auth;
-
+use DB;
 use App\Timelines;
+use App\Supports;
 
 class TimelinesController extends Controller
 {
@@ -17,7 +18,11 @@ class TimelinesController extends Controller
     {
 				if(Auth::check()){
 					$id = Auth::user()->id;
-					$Timelines = Timelines::all();
+					$Timelines = DB::table('Timelines')
+                                ->join('Supports', 'Timelines.content_id', '=', 'Supports.content_id')
+                                ->select('Timelines.*')
+                                ->where('Supports.user_id', $id)
+                                ->get();
         	return view('timeline', ["Timelines" => $Timelines]);
 				}
     }

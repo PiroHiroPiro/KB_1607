@@ -5,13 +5,13 @@
 @section('title', 'TimeLine')
 
 @section('content')
-    <div class="inner">
+    <div class="tl_inner">
         <!-- TimeLine Content -->
         <?php foreach ($Timelines as $Timeline) { ?>
             <div class="tl_content">
                 <div class="tl_header">
                     <img class="tl_icon" src="">
-                    <p><?php echo $Timeline->name ?></p>
+                    <p><?php echo $Timeline->title ?></p>
                 </div>
                 <div class="tl_text">
                     <p><?php echo $Timeline->message ?></p>

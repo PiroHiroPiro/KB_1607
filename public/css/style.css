@@ -158,6 +158,21 @@ img.logo {
 	text-align: center;
 }
 
+/* 以下timelines部分 */
+.tl_inner{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+    max-width: 960px;
+    padding: 20px 0px;
+}
+
+img.tl_img{
+    width: 400px;
+    height: 300px;
+}
+
 /* 以下footer部分 */
 
 .footer {
