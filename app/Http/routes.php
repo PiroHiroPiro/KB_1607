@@ -11,12 +11,7 @@
 |
 */
 
-use App\Contents;
-
-Route::get('/', function () {
-		$Contents = Contents::all();
-    return view('top', ["Contents" => $Contents]);
-});
+Route::get('/', 'ContentsController@getTop');
 Route::controller('/content', 'ContentsController');
 Route::controller('/timeline', 'TimelinesController');
 Route::get('auth/login', 'Auth\AuthController@getLogin');
