@@ -9,7 +9,7 @@
         <?php foreach ($Contents as $Content) { ?>
             <div class="content">
                 <img src="<?php echo $Content->picture1 ?>">
-                <h2><?php echo $Content->message ?></h2>
+                <h2><?php echo $Content->title ?></h2>
                 <p><?php echo $Content->name ?></p>
             </div>
         <?php } ?>
