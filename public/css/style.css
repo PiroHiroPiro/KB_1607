@@ -6,14 +6,14 @@
     padding: 0;
 }
 
-.inner li {
+/*.inner li {
     padding-right: 66px;
-}
+}*/
 
-h1 a:link {
+/*h1 a:link {
     color: #FFFFFF;
     text-decoration: none;
-}
+}*/
 
 a:visited {
     color: #337ab7;
@@ -142,7 +142,6 @@ img.tl_img{
     clear: both;
     height: 60px;
     margin-top: 36px;
-    margin: 36 0;
 }
 
 .footer-item {
@@ -164,4 +163,8 @@ img.tl_img{
     color: #fff;
     clear: both;
     text-align: center;
+}
+.copyright a:visited {
+    color: #fff;
+    text-decoration: none;
 }
