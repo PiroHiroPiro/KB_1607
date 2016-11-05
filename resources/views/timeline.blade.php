@@ -7,7 +7,7 @@
 @section('content')
     <div class="inner">
         <!-- TimeLine Content -->
-        <?php for ($i = 0; $i < 10; $i++) { ?>
+        <?php for ($i = 0; $i < $id; $i++) { ?>
             <div class="tl_content">
                 <div class="tl_header">
                     <img class="tl_icon" src="">
