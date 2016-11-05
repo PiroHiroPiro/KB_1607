@@ -7,20 +7,20 @@
 @section('content')
     <div class="inner">
         <!-- TimeLine Content -->
-        <?php for ($i = 0; $i < $id; $i++) { ?>
+        <?php foreach ($Timelines as $Timeline) { ?>
             <div class="tl_content">
                 <div class="tl_header">
                     <img class="tl_icon" src="">
-                    <p><?php echo "Brian" ?></p>
+                    <p><?php echo $Timeline->name ?></p>
                 </div>
                 <div class="tl_text">
-                    <p><?php echo "あのイーハトーヴォの すきとおった風、 夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎらひかる草の波" ?></p>
+                    <p><?php echo $Timeline->message ?></p>
                 </div>
                 <div class="">
-                    <img class="tl_img" src="<?php echo "Brian" ?>">
+                    <img class="tl_img" src="<?php echo $Timeline->picture1 ?>">
                 </div>
                 <div class="tl_footer">
-                    <p>created at:<?php echo "2016/11/5 14:12:52" ?></p>
+                    <p>created at:<?php echo $Timeline->created_at ?></p>
                 </div>
             </div>
         <?php } ?>
