@@ -11,8 +11,11 @@
 |
 */
 
+use App\Contents;
+
 Route::get('/', function () {
-    return view('top');
+		$Contents = Contents::all();
+    return view('top', ["Contents" => $Contents]);
 });
 Route::controller('/content', 'ContentsController');
 Route::controller('/timeline', 'TimelinesController');
