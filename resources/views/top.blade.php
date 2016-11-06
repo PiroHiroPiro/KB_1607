@@ -12,9 +12,13 @@
                 <a href="/content/view/<?php echo $Content->id ?>">
                     <div class="content">
                         <img src="<?php echo $Content->picture1 ?>">
+                        <div class="support">
+                            <?php if(isset($Content->supported) && $Content->supported == true) { ?>
+                                <span class="label label-info">応援中 <i class="fa fa-child"></i></span>
+                            <?php } ?>
+                        </div>
                         <h2><?php echo $Content->title ?></h2>
                         <p><?php echo $Content->name ?></p>
-                        <?php if(isset($Content->supported) && $Content->supported == true) { echo "<p>supported</p>"; } ?>
                     </div>
                 </a>
             </div>
