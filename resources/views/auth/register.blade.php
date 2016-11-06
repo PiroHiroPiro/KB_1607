@@ -12,6 +12,12 @@
 </head>
 
 <body>
+  <div>
+    <form>
+      <INPUT type="button" onClick='history.back();' value="<i class="fa fa-hand-o-left"></i>">
+    </form>
+  </div>
+
     <!-- sign up -->
     <div class="signup_inner">
        <img class="logo" src="/img/logo-sample.png">
