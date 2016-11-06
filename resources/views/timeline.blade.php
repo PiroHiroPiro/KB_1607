@@ -16,10 +16,10 @@
                 <div class="tl-content">
                     <div class="media tl_header">
                         <div class="media-left">
-                            <img src="<?php echo '/img/IAN.JPG'; //$Timeline->picture1 ?>" class="tl-icon">
+                            <img src="<?php echo $Timeline->content_icon ?>" class="tl-icon">
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading tl-name"><?php echo "IAN";//echo $Timeline->name ?></h4>
+                            <h4 class="media-heading tl-name"><?php echo $Timeline->content_name ?></h4>
                             <p class="tl-title"><?php echo $Timeline->title ?></p>
                         </div>
                     </div>
