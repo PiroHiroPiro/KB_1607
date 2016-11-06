@@ -20,7 +20,8 @@ class TimelinesController extends Controller
 					$id = Auth::user()->id;
 					$Timelines = DB::table('Timelines')
                                 ->join('Supports', 'Timelines.content_id', '=', 'Supports.content_id')
-                                ->select('Timelines.*')
+                                ->join('Contents', 'Timelines.content_id', '=', 'Contents.id')
+                                ->select('Timelines.*', 'Contents.*')
                                 ->where('Supports.user_id', $id)
                                 ->get();
         	return view('timeline', ["Timelines" => $Timelines]);
