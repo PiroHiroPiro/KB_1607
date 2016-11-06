@@ -12,8 +12,8 @@
 </head>
 
 <body>
+    <!-- login -->
     <div class="login_inner">
-       <!-- <h1>募金Tech</h1> -->
        <img class="logo" src="/img/logo-sample.png">
        <form method="POST" action="/auth/login">
            <div class="form_inner">
@@ -24,11 +24,6 @@
                <div class="input-group input-group-lg">
                    <input type="password" class="form-control" name="password" id="password" placeholder="&#xf084;  Pass Word">
                </div>
-               <!-- <div class="input-group input-group-sm">
-                   <span class="input-group-addon">
-                       <input type="checkbox" name="remember"> ログインを継続する
-                   </span>
-               </div> -->
                <div class="btn-group" role="group">
                    <button type="submit" class="btn btn-default">Login</button>
                </div>
@@ -39,4 +34,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>

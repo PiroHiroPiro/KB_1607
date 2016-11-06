@@ -1,19 +1,10 @@
-/*
+
 /* 全てのmargin, paddingを0に */
 
 * {
     margin: 0;
     padding: 0;
 }
-
-/*.inner li {
-    padding-right: 66px;
-}*/
-
-/*h1 a:link {
-    color: #FFFFFF;
-    text-decoration: none;
-}*/
 
 a:visited {
     color: #337ab7;
@@ -36,36 +27,36 @@ body {
 
 /* 以下header部分*/
 
-a.logo-around{
+a.logo-around {
     padding: 0px 30px;
 }
 
-img#logo{
+img#logo {
     width:70px;
     height:50px;
 }
-li.menu-list{
+li.menu-list {
     padding-right: 30px;
 }
 
-li#user-info{
+li#user-info {
     line-height:20px;
     padding: 15px;
 }
 
-li#log-info{
+li#log-info {
     padding-right: 15px;
 }
 
 /* 以下container部分*/
 
-.container{
+.container {
 	display: flex;
 	justify-content: center;
     padding-top: 60px;
 }
 
-.inner{
+.inner {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -74,35 +65,29 @@ li#log-info{
     padding: 50px 0px 20px 0px;
 }
 
-.content_around{
+.content-around {
 	margin: 0px 30px 45px 30px;
     padding: 5px;
-    /*border: 1px solid grey;
-    border-radius: 10px;*/
 }
 
-/*.content{
-    border:  1px grey;
-}*/
-
-.content:hover{
+.content:hover {
 	background-color: grey;
 	border-radius: 10px;
 	transition: 0.4s;
 }
 
-.content img{
+.content img {
 	width: 300px;
 	height: 200px;
 	border-radius: 10px;
 }
 
-.content h2{
+.content h2 {
 	text-align: center;
 	font-size: 24px;
 }
 
-.content p{
+.content p {
 	text-align: center;
     margin-bottom: 0px;
     padding-bottom: 10px;
@@ -110,14 +95,19 @@ li#log-info{
 
 /* 以下timelines部分 */
 
-.nc_inner{
+.nc-inner {
     display: flex;
     padding: 20px 0px;
     justify-content: center;
     padding: calc((100vh - 322px) / 2) 0px;
 }
 
-.tl_inner{
+img.no-content {
+    width: 600px;
+    height: 166px;
+}
+
+.tl-inner {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -126,13 +116,52 @@ li#log-info{
     padding: 20px 0px;
 }
 
-img.no_content{
-    width: 600px;
-    height: 166px;
+.tl-content {
+    padding: 30px;
+    width: 100%;
 }
-img.tl_img{
+
+.tl-content:not(:nth-child(1)) {
+    border-top: 1px solid #222;
+}
+
+img.tl-icon {
+    height: 79px;
+    border-radius: 10px;
+}
+
+.tl-name {
+    line-height: normal;
+    font-size: 20px;
+}
+
+.tl-text {
+    padding: 20px 0px;
+}
+
+p.tl-title {
+    font-size: 24px;
+}
+
+p.tl-message {
+    font-size: 18px;
+}
+
+.tl-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.tl-img {
     width: 400px;
     height: 300px;
+}
+
+.tl-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 0px;
 }
 
 /* 以下footer部分 */
