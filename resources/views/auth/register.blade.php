@@ -26,16 +26,16 @@
            <div class="form_inner">
                {!! csrf_field() !!}
                <div class="input-group input-group-lg">
-                   <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="&#xf007; Name">
+                   <input type="text" class="form-control" name="name" value="{{ old('name') }}" required="true" placeholder="&#xf007; Name">
                </div>
                <div class="input-group input-group-lg">
-                   <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#xf0e0; E-mail">
+                   <input type="email" class="form-control" name="email" value="{{ old('email') }}" required="true" placeholder="&#xf0e0; E-mail">
                </div>
                <div class="input-group input-group-lg">
-                   <input type="password" class="form-control" name="password" id="password" placeholder="&#xf084;  Password">
+                   <input type="password" class="form-control" name="password" id="password" required="true" placeholder="&#xf084;  Password">
                </div>
                <div class="input-group input-group-lg">
-                   <input type="password" class="form-control" name="password_confirmation" id="password" placeholder="&#xf084;  Confirm Password">
+                   <input type="password" class="form-control" name="password_confirmation" id="password" required="true" placeholder="&#xf084;  Confirm Password">
                </div>
                <div class="btn-group" role="group">
                    <button type="submit" class="btn btn-default">Sign Up</button>
