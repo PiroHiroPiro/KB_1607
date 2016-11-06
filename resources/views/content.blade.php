@@ -15,6 +15,10 @@
 	</div> -->
 
 	<div class="inner">
+		<!-- <div class="image">
+			<img src="/img/000.jpeg" class="gazou">
+		</div> -->
+	<!-- <img src="/img/b_simple_115_0L.png" class="gazouwaku"/> -->
 	    <div id="wrapper">
 	      <input type="radio" name="slideshow" id="switch1" checked>
 	      <input type="radio" name="slideshow" id="switch2">
@@ -60,28 +64,14 @@
 
 
 	    <div class="description">
-	    	<div class="description-item">
-	    		<div class="titlee">
-		      		<div class="ti"><h1><i class="fa fa-tag" aria-hidden="true"></i><br>Title</h1></div>
-		      		<div><p>title<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></div>
-		      	</div>
-		     </div>
+      		<h1><span>Title</span></h1>
+      		<p class="titlee">title</p>
 
+      		<h1><span>Name</span></h1>
+      		<p class="na">name</p>
 
-		     <div class="description-item">
-		     	<div class="namee">
-		     		<div><p>name<br></p></div>
-		      		<div class="na"><h1><i class="fa fa-tag" aria-hidden="true"></i><br>Name</h1></div>
-		      	</div>
-		    </div>
-
-
-		    <div class="description-item">
-		    	<div class="introduce">
-		      		<div class="intro"><h1><i class="fa fa-tag" aria-hidden="true"></i><br>Introduce</h1></div>
-		      		<div><p>introduce</p></div>
-		      	</div>
-		    </div>
+      		<h1><span>Introduction</span></h1>
+      		<p class="intro">introduction</p>
 	    </div>
 
 	    <div class="btn-group" role="group">
