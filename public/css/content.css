@@ -3,9 +3,6 @@
   margin: 0;
   padding: 0;
 }
-body{
-  color: #F5F5DC;
-}
 
 
 .inner{
@@ -211,19 +208,6 @@ input[type="radio"] {
   border-top: 2px solid #A9A9A9;
   margin:23px 0 0;
   padding:0; height:24px;
-
-    /*text-align:center;*/
-
-
-  /*border-bottom: solid 1px black;*/
-
-
-/*  border-bottom: solid 2px #A9A9A9;
-  display: inline-block;*/
-/*background-color: #FFF;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
-  width: 60vw;*/
 }
 
 h1 span{
@@ -234,33 +218,12 @@ h1 span{
   background:white;
 }
 
-/*h1 span{
-  margin: 0 auto;
-  text-align: center;
-  border-bottom: solid 2px #A9A9A9;
-  display: block;
-  width: 50px;
-}*/
-
-/*.body h2{
-  text-align: center;
-  color: #000;
-  font-family: 'Book Antiqua';
-  border-bottom: solid 2px #A9A9A9;*/
-/*  background-color: #FFF;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
-  width: 60vw;
-}*/
-
 .description p{
   text-align: center;
   width: 800px;
   word-wrap: break-word;
   padding: 50px 0;
   color: #000;
-/*  background: rgba(255,255,255,0.3);
-*/
 }
 
 .titlee{
@@ -275,6 +238,8 @@ h1 span{
   font-size: 18px;
 }
 
+
+
 .button {
   position: relative;
   background-color: #CCC;
@@ -286,6 +251,7 @@ h1 span{
   box-shadow: 0 3px 0 #BBB;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
   width: 200px;
+  margin-bottom: 50px;
 }
 .button:hover {
   background-color: #AAA;
@@ -302,61 +268,3 @@ h1 span{
 
 
 
-/*
-{
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}*/
-/*.btn {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    height: 40px;
-    padding: 5px 30px;
-    text-align: center;
-    text-decoration: none;
-    width: 190px;
-    font-size: 13px;
-    line-height: 2em;
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: all .3s ease-in-out;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3D(-50%, -50%, 0);
-  color: #fff;
-  border: 2px solid #fff;
-
-    &:before,
-    &:after {
-        width: 0%;
-        height: 2px;
-        position: absolute;
-        background: #e5c100;
-        transition: width .4s ease-in-out;
-        content: " ";
-    }
-
-    &:before {
-        left: 0;
-        top: -2px;
-    }
-
-    &:after {
-        bottom: -2px;
-        right: 0;
-    }
-
-    &:hover {
-        padding: 5px 25px 5px 35px;
-        border-color: #e5c100;
-    color: lighten(#e5c100, 50%);
-
-        &:before,
-        &:after {
-            width: 100%;
-        }
-    }
-}*/
