@@ -9,8 +9,9 @@
 @endsection
 
 @section('content')
-
     <div class="inner">
+
+        <!-- image slide -->
         <div id="wrapper">
             <input type="radio" name="slideshow" id="switch1" checked>
             <input type="radio" name="slideshow" id="switch2">
@@ -35,37 +36,36 @@
                         <img src="<?php echo $Content->picture5; ?>">
                     </section>
                 </div>
-            <p class="arrow prev">
-                <i class="ico"></i>
-                <label for="switch1"></label>
-                <label for="switch2"></label>
-                <label for="switch3"></label>
-                <label for="switch4"></label>
-                <label for="switch5"></label>
-            </p>
-            <p class="arrow next">
-                <i class="ico"></i>
-                <label for="switch1"></label>
-                <label for="switch2"></label>
-                <label for="switch3"></label>
-                <label for="switch4"></label>
-                <label for="switch5"></label>
-            </p>
+                <p class="arrow prev">
+                    <i class="ico"></i>
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </p>
+                <p class="arrow next">
+                    <i class="ico"></i>
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </p>
+            </div>
         </div>
-    </div>
 
-
+        <!-- description -->
         <div class="description">
               <h1><span>Title</span></h1>
               <p class="titlee"><?php echo $Content->title; ?></p>
-
               <h1><span>Name</span></h1>
               <p class="na"><?php echo $Content->name; ?></p>
-
               <h1><span>Introduction</span></h1>
               <p class="intro"><?php echo $Content->description; ?></p>
         </div>
 
+        <!-- button -->
         @if (Auth::guest())
             <button type="button" class="btn button" onclick="location.href='/auth/login'">
                 <i class="fa fa-gift"></i>  応援する  <i class="fa fa-gift"></i>
@@ -76,6 +76,7 @@
             </button>
         @endif
 
+        <!-- modal -->
         <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -91,7 +92,7 @@
                                 <div class="money-form-body">
                                     {!! csrf_field() !!}
                                     <input type="hidden" class="form-control" name="content_id" value="<?php echo $Content->id; ?>">
-                                    <input type="number" class="form-control money-form" name="money" placeholder="1000" min="1" required="true"><span>  円</span>
+                                    <input type="number" class="form-control money-form" name="money" placeholder="1000" min="1" required="true"><span>円</span>
                                 </div>
                                 <button type="submit" class="btn button"><i class="fa fa-gift"></i>  応援する  <i class="fa fa-gift"></i></button>
                             </form>

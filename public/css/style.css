@@ -50,7 +50,7 @@ li#log-info {
 
 /* 以下container部分*/
 
-.support{
+.support {
     display: flex;
     justify-content: flex-end;
     padding-top: 5px;
