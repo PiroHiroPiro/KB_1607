@@ -118,6 +118,60 @@ class ContentsTableSeeder extends Seeder
             \n
             もし応援していただけるなら応援をよろしくお願いします。\n",
             "picture1"=>"/img/images10.jpg",
+            "picture2"=>"/img/pianowinner.jpg",
+            "picture3"=>"/img/images10.jpg",
+            "picture4"=>"/img/pianowinner.jpg",
+            "picture5"=>"/img/images10.jpg",
+            "video"=>"/img/images10.jpg"
+        ]);
+        Contents::create([
+            "name"=>"山田 太郎",
+            "title"=>" 留学に行きたいです。",
+            "description"=>"大学で英語の勉強をしています。将来、海外で働きたいと思っています。ネイティブとも話せる英語を学ぶためにイギリスに留学に行きたいです。しかし、留学するお金が足りません。どうか私に募金してください。",
+            "picture1"=>"/img/images3.jpg",
+            "picture2"=>"/img/images3.jpg",
+            "picture3"=>"/img/images3.jpg",
+            "picture4"=>"/img/images3.jpg",
+            "picture5"=>"/img/images3.jpg",
+            "video"=>"/img/images3.jpg"
+        ]);
+        Contents::create([
+            "name"=>"松田 美香",
+            "title"=>"海外留学がしたいです",
+            "description"=>"私は小さい頃からピアノを弾いてきました。高校では全国大会に出場し、大学は音楽大学に進学しピアノを専攻しています。\n
+            来年卒業するのですが、まだまだ自分では未熟だと感じており、さらにレベルの高い場所でピアノの勉強をしたいと考えています。\n
+            そこでオーストリア・ウィーンに海外留学をしたいと考えています。\n
+            しかし、実家が裕福ではなく私もアルバイトは生活費となってしまうため、海外にいく余裕はありません。\n
+            \n
+            もし応援していただけるなら応援をよろしくお願いします。\n",
+            "picture1"=>"/img/images10.jpg",
+            "picture2"=>"/img/images10.jpg",
+            "picture3"=>"/img/images10.jpg",
+            "picture4"=>"/img/images10.jpg",
+            "picture5"=>"/img/images10.jpg",
+            "video"=>"/img/images10.jpg"
+        ]);
+        Contents::create([
+            "name"=>"山田 太郎",
+            "title"=>" 留学に行きたいです。",
+            "description"=>"大学で英語の勉強をしています。将来、海外で働きたいと思っています。ネイティブとも話せる英語を学ぶためにイギリスに留学に行きたいです。しかし、留学するお金が足りません。どうか私に募金してください。",
+            "picture1"=>"/img/images3.jpg",
+            "picture2"=>"/img/images3.jpg",
+            "picture3"=>"/img/images3.jpg",
+            "picture4"=>"/img/images3.jpg",
+            "picture5"=>"/img/images3.jpg",
+            "video"=>"/img/images3.jpg"
+        ]);
+        Contents::create([
+            "name"=>"松田 美香",
+            "title"=>"海外留学がしたいです",
+            "description"=>"私は小さい頃からピアノを弾いてきました。高校では全国大会に出場し、大学は音楽大学に進学しピアノを専攻しています。\n
+            来年卒業するのですが、まだまだ自分では未熟だと感じており、さらにレベルの高い場所でピアノの勉強をしたいと考えています。\n
+            そこでオーストリア・ウィーンに海外留学をしたいと考えています。\n
+            しかし、実家が裕福ではなく私もアルバイトは生活費となってしまうため、海外にいく余裕はありません。\n
+            \n
+            もし応援していただけるなら応援をよろしくお願いします。\n",
+            "picture1"=>"/img/images10.jpg",
             "picture2"=>"/img/images10.jpg",
             "picture3"=>"/img/images10.jpg",
             "picture4"=>"/img/images10.jpg",
