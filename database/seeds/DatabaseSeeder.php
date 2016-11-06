@@ -30,187 +30,120 @@ class DatabaseSeeder extends Seeder
 
 class UserTableSeeder extends Seeder
 {
-	public function run()
-	{
-		DB::table('users')->delete();
-		$password_ian = password_hash("ian", PASSWORD_BCRYPT);
-		User::create([
-			"name"=>"ian",
-			"email"=>"ian@mail.com",
-			"password"=>$password_ian
-		]);
-		$password_hiro = password_hash("hiro", PASSWORD_BCRYPT);
-		User::create([
-			"name"=>"hiro",
-			"email"=>"hiro@mail.com",
-			"password"=>$password_hiro
-		]);
-		$password_hanabusa = password_hash("hanabusa", PASSWORD_BCRYPT);
-		User::create([
-			"name"=>"hanabusa",
-			"email"=>"hanabusa@mail.com",
-			"password"=>$password_hanabusa
-		]);
-	}
+    public function run()
+    {
+        DB::table('users')->delete();
+        $password_ian = password_hash("ian", PASSWORD_BCRYPT);
+        User::create([
+            "name"=>"ian",
+            "email"=>"ian@mail.com",
+            "password"=>$password_ian
+        ]);
+        $password_hiro = password_hash("hiro", PASSWORD_BCRYPT);
+        User::create([
+            "name"=>"hiro",
+            "email"=>"hiro@mail.com",
+            "password"=>$password_hiro
+        ]);
+        $password_hanabusa = password_hash("hanabusa", PASSWORD_BCRYPT);
+        User::create([
+            "name"=>"hanabusa",
+            "email"=>"hanabusa@mail.com",
+            "password"=>$password_hanabusa
+        ]);
+    }
 
 }
 
 class TimelinesTableSeeder extends Seeder
 {
-	public function run()
-	{
-		DB::table('Timelines')->delete();
-		Timelines::create([
-			"content_id"=>1,
-			"title"=>"世界大会予選で負けました",
-			"message"=>"いつもお世話になっています。最近ドリフトの世界大会に行ってきました。
-                        予選で負けてしまいましたが、これからも応援お願いします。",
-            "picture1"=>"/img/IAN2.JPG",
-            "picture2"=>"/img/IAN2.JPG",
-            "picture3"=>"/img/IAN2.JPG",
-            "picture4"=>"/img/IAN2.JPG",
-            "picture5"=>"/img/IAN2.JPG",
-            "video"=>"/img/IAN2.JPG"
-		]);
+    public function run()
+    {
+        DB::table('Timelines')->delete();
         Timelines::create([
-			"content_id"=>1,
-			"title"=>"サポーターがつきました！",
-			"message"=>"いつもお世話になっています。
-                        最近ACAという会社がサポーターになってくれました。
-                        これからも応援お願いします。",
-            "picture1"=>"/img/IAN3.JPG",
-            "picture2"=>"/img/IAN3.JPG",
-            "picture3"=>"/img/IAN3.JPG",
-            "picture4"=>"/img/IAN3.JPG",
-            "picture5"=>"/img/IAN3.JPG",
-            "video"=>"/img/IAN3.JPG"
-		]);
+            "content_id"=>1,
+            "title"=>"お久しぶりです",
+            "message"=>"お久しぶりです。\n
+            おかげさまでウィーンに留学することができ、今ウィーン市内にある音楽大学でよりレベルの高い講義を受けています。\n
+            気候も良く、学生は皆音楽に熱心に取り組んでおり、毎日楽しく過ごしています。\n",
+            "picture1"=>"/img/vienna.jpg",
+            "picture2"=>"/img/pianowinner.jpg",
+            "picture3"=>"/img/vienna.jpg",
+            "picture4"=>"/img/pianowinner.jpg",
+            "picture5"=>"/img/vienna.jpg",
+            "video"=>"/img/vienna.jpg"
+        ]);
         Timelines::create([
-			"content_id"=>2,
-			"title"=>"あああああああ",
-			"message"=>"あああ",
-            "picture1"=>"/img/IAN.JPG",
-            "picture2"=>"/img/IAN2.JPG",
-            "picture3"=>"/img/IAN3.JPG",
-            "picture4"=>"/img/IAN.JPG",
-            "picture5"=>"/img/IAN2.JPG",
-            "video"=>"/img/IAN3.JPG"
-		]);
+            "content_id"=>2,
+            "title"=>"無事に留学することができました。",
+            "message"=>"今、イギリスにいます。",
+            "picture1"=>"/img/images15.png",
+            "picture2"=>"/img/images15.png",
+            "picture3"=>"/img/images15.png",
+            "picture4"=>"/img/images15.png",
+            "picture5"=>"/img/images15.png",
+            "video"=>"/img/images15.png"
+        ]);
         Timelines::create([
-			"content_id"=>3,
-			"title"=>"あああああああ",
-			"message"=>"あああ",
-            "picture1"=>"/img/IAN.JPG",
-            "picture2"=>"/img/IAN.JPG",
-            "picture3"=>"/img/IAN.JPG",
-            "picture4"=>"/img/IAN.JPG",
-            "picture5"=>"/img/IAN.JPG",
-            "video"=>"/img/IAN.JPG"
-		]);
-	}
+            "content_id"=>1,
+            "title"=>"日本に一度戻ります",
+            "message"=>"お久しぶりです。
+            今日は皆様に報告があります。
+            今度一度日本に帰ることになりました。\n
+            そこで皆様に一度私のピアノを聞いていただけたらなと考えています！\n
+            また詳細は連絡したいと考えているので、ぜひいらしてください！",
+            "picture1"=>"/img/concert.jpg",
+            "picture2"=>"/img/concert.jpg",
+            "picture3"=>"/img/concert.jpg",
+            "picture4"=>"/img/concert.jpg",
+            "picture5"=>"/img/concert.jpg",
+            "video"=>"/img/concert.jpg"
+        ]);
+    }
 
 }
 
 class ContentsTableSeeder extends Seeder
 {
-	public function run()
-	{
-		DB::table('Contents')->delete();
-		Contents::create([
-			"name"=>"Iam Brison",
-			"title"=>"Plz Money...",
-			"description"=>"お金が欲しい。。。。。。欲しいよおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお",
-            "picture1"=>"/img/IAN2.JPG",
-            "picture2"=>"/img/IAN2.JPG",
-            "picture3"=>"/img/IAN2.JPG",
-            "picture4"=>"/img/IAN2.JPG",
-            "picture5"=>"/img/IAN2.JPG",
-            "video"=>"/img/IAN2.JPG"
-		]);
+    public function run()
+    {
+        DB::table('Contents')->delete();
         Contents::create([
-			"name"=>"Ian",
-			"title"=>"シリコンバレーに行きたい",
-			"description"=>"飛行機代が出せません、、、誰かお願いします。",
-            "picture1"=>"/img/IAN.JPG",
-            "picture2"=>"/img/IAN.JPG",
-            "picture3"=>"/img/IAN.JPG",
-            "picture4"=>"/img/IAN.JPG",
-            "picture5"=>"/img/IAN.JPG",
-            "video"=>"/img/IAN.JPG"
-		]);
+            "name"=>"松田 美香",
+            "title"=>"海外留学がしたいです",
+            "description"=>"私は小さい頃からピアノを弾いてきました。高校では全国大会に出場し、大学は音楽大学に進学しピアノを専攻しています。\n
+            来年卒業するのですが、まだまだ自分では未熟だと感じており、さらにレベルの高い場所でピアノの勉強をしたいと考えています。\n
+            そこでオーストリア・ウィーンに海外留学をしたいと考えています。\n
+            しかし、実家が裕福ではなく私もアルバイトは生活費となってしまうため、海外にいく余裕はありません。\n
+            \n
+            もし応援していただけるなら応援をよろしくお願いします。\n",
+            "picture1"=>"/img/images10.jpg",
+            "picture2"=>"/img/images10.jpg",
+            "picture3"=>"/img/images10.jpg",
+            "picture4"=>"/img/images10.jpg",
+            "picture5"=>"/img/images10.jpg",
+            "video"=>"/img/images10.jpg"
+        ]);
         Contents::create([
-			"name"=>"Buraison",
-			"title"=>"だるいいいい",
-			"description"=>"aaaaaaassssssdfdsgdfsgdfslgdfsigisfdn",
-            "picture1"=>"/img/IAN3.JPG",
-            "picture2"=>"/img/IAN3.JPG",
-            "picture3"=>"/img/IAN3.JPG",
-            "picture4"=>"/img/IAN3.JPG",
-            "picture5"=>"/img/IAN3.JPG",
-            "video"=>"/img/IAN3.JPG"
-		]);
-        Contents::create([
-			"name"=>"hiro",
-			"title"=>"help me",
-			"description"=>"大dbvfbdsヴィウダhsヴィm杯smふはs痔v日青hみhヴォアdふmhv",
-            "picture1"=>"/img/IAN.JPG",
-            "picture2"=>"/img/IAN2.JPG",
-            "picture3"=>"/img/IAN3.JPG",
-            "picture4"=>"/img/IAN.JPG",
-            "picture5"=>"/img/IAN2.JPG",
-            "video"=>"/img/IAN3.JPG"
-		]);
-        Contents::create([
-			"name"=>"イアンノーネ",
-			"title"=>"adsf",
-			"description"=>"dfadgafasdfasd",
-            "picture1"=>"/img/IAN2.JPG",
-            "picture2"=>"/img/IAN2.JPG",
-            "picture3"=>"/img/IAN2.JPG",
-            "picture4"=>"/img/IAN2.JPG",
-            "picture5"=>"/img/IAN2.JPG",
-            "video"=>"/img/IAN2.JPG"
-		]);
-        Contents::create([
-			"name"=>"青shv",
-			"title"=>"fasdfasdf",
-			"description"=>"asdfasdfas",
-            "picture1"=>"/img/IAN1.JPG",
-            "picture2"=>"/img/IAN1.JPG",
-            "picture3"=>"/img/IAN1.JPG",
-            "picture4"=>"/img/IAN1.JPG",
-            "picture5"=>"/img/IAN1.JPG",
-            "video"=>"/img/IAN1.JPG"
-		]);
-	}
+            "name"=>"山田 太郎",
+            "title"=>" 留学に行きたいです。",
+            "description"=>"大学で英語の勉強をしています。将来、海外で働きたいと思っています。ネイティブとも話せる英語を学ぶためにイギリスに留学に行きたいです。しかし、留学するお金が足りません。どうか私に募金してください。",
+            "picture1"=>"/img/images3.jpg",
+            "picture2"=>"/img/images3.jpg",
+            "picture3"=>"/img/images3.jpg",
+            "picture4"=>"/img/images3.jpg",
+            "picture5"=>"/img/images3.jpg",
+            "video"=>"/img/images3.jpg"
+        ]);
+    }
 
 }
 
 class SupportsTableSeeder extends Seeder
 {
-	public function run()
-	{
-		DB::table('Supports')->delete();
-		Supports::create([
-			"user_id"=>1,
-            "content_id"=>2,
-            "money"=>1000000
-		]);
-        Supports::create([
-			"user_id"=>2,
-            "content_id"=>3,
-            "money"=>1000000
-		]);
-        Supports::create([
-			"user_id"=>2,
-            "content_id"=>1,
-            "money"=>1000000
-		]);
-        Supports::create([
-			"user_id"=>3,
-            "content_id"=>3,
-            "money"=>1000000
-		]);
-	}
+    public function run()
+    {
+        DB::table('Supports')->delete();
+    }
 
 }
