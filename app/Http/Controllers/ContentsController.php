@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Contents;
+use App\Supports;
 use Auth;
 use DB;
 
@@ -28,6 +29,21 @@ class ContentsController extends Controller
     // GET /contents/view/{id}
 		public function getView($id)
 		{
-				return view('content', ["id" => $id]);
+				$Content = Contents::find($id);
+				return view('content', ["Content" => $Content]);
+		}
+		
+		// POST /content/support
+		public function postSupport(Request $request)
+		{
+				if(Auth::check()){
+						$support = new Supports;
+						$support->user_id = Auth::user()->id;
+						$support->content_id = $request->content_id;
+						$support->money = $request->money;
+						$support->save();
+				}else{
+
+				}
 		}
 }
