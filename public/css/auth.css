@@ -18,16 +18,16 @@ body {
 	padding-top: calc((100vh - 550px) / 2);
 }
 
-.login_inner h1{
+.login_inner h1 {
 	font-size: 100px;
 	margin-bottom: 100px;
 }
 
-.login_inner .logo{
+.login_inner .logo {
 	margin-bottom: 30px;
 }
 
-.login_inner form{
+.login_inner form {
 	width: 100%;
 }
 
@@ -39,34 +39,35 @@ body {
 	padding-top: calc((100vh - 650px) / 2);
 }
 
-.signup_inner h1{
+.signup_inner h1 {
 	font-size: 100px;
 	margin-bottom: 100px;
 }
 
-.signup_inner .logo{
+.signup_inner .logo {
 	margin-bottom: 30px;
 }
 
-.signup_inner form{
+.signup_inner form {
 	width: 100%;
 }
 
-p{
+p {
     margin-top: 20px;
 }
 
-.form_inner{
+.form_inner {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.input-group{
+.input-group {
 	margin-bottom: 10px;
 	width: 40%;
+    min-width: 300px;
 }
 
-.form_inner input{
+.form_inner input {
 	font-family: FontAwesome;
 }

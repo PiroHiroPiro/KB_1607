@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo-around" href="#">
+                <a class="navbar-brand logo-around" href="">
                     <img alt="募金Tech" src="/img/logo-sample.png" id="logo">
                 </a>
             </div>
@@ -36,6 +36,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
+                        <li><a href="/auth/register"><i class="fa fa-user-plus"></i> Sign Up</a></li>
                     @else
                         <li id="user-info">
                             <i class="fa fa-user"></i> ようこそ {{ Auth::user()->name }} さん
