@@ -16,11 +16,11 @@
                 <div class="tl-content">
                     <div class="media tl_header">
                         <div class="media-left">
-                            <img src="<?php echo "/img/IAN.JPG";// ここ直して//Timeline->Contents.picture1 ?>" class="tl-icon">
+                            <img src="<?php echo $Timeline->content_icon ?>" class="tl-icon">
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading tl-name"><?php echo "ここ直して"//$Timeline->name ?></h4>
-                            <p class="tl-title"><?php echo $Timeline->Timelines.title ?></p>
+                            <h4 class="media-heading tl-name"><?php echo $Timeline->content_name ?></h4>
+                            <p class="tl-title"><?php echo $Timeline->title ?></p>
                         </div>
                     </div>
                     <div class="tl-text">

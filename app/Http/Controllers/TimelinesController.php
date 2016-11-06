@@ -18,12 +18,13 @@ class TimelinesController extends Controller
     {
 				if(Auth::check()){
 					$id = Auth::user()->id;
-					$Timelines = DB::table('Timelines')
+					/*$Timelines = DB::table('Timelines')
                                 ->join('Supports', 'Timelines.content_id', '=', 'Supports.content_id')
                                 ->join('Contents', 'Timelines.content_id', '=', 'Contents.id')
                                 ->select('Timelines.*', 'Contents.*')
                                 ->where('Supports.user_id', $id)
-                                ->get();
+                                ->get();*/
+					$Timelines = DB::select('select Timelines.*, Contents.name as content_name, Contents.picture1 as content_icon from (Timelines inner join Contents on Timelines.content_id = Contents.id) inner join Supports on (Timelines.content_id = Supports.content_id) where Supports.user_id = ?', [$id]);
         	return view('timeline', ["Timelines" => $Timelines]);
 				}
     }
