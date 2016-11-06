@@ -37,11 +37,19 @@ class ContentsController extends Controller
 		public function postSupport(Request $request)
 		{
 				if(Auth::check()){
-						$support = new Supports;
-						$support->user_id = Auth::user()->id;
-						$support->content_id = $request->content_id;
-						$support->money = $request->money;
-						$support->save();
+						$support = Supports::where('user_id', Auth::user()->id)
+															->where('content_id', $request->content_id)
+															->first();
+						if(isset($support)){
+								$support->money = $support->money + $request->money;
+								$support->save();
+						}else{
+								$support = new Supports;
+								$support->user_id = Auth::user()->id;
+								$support->content_id = $request->content_id;
+								$support->money = $request->money;
+								$support->save();
+						}
 						return redirect('/');
 				}else{
 						return redirect('/auth/login');
