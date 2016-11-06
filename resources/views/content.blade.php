@@ -28,19 +28,19 @@
 	      <div id="slideshow">
 	        <div class="slideContents">
 	          <section id="slide1">
-	            <img src="/img/lgf01a201402090600.jpg">
+	            <img src="<?php echo $Content->picture1; ?>">
 	          </section>
 	          <section id="slide2">
-	            <img src="/img/gatag-00009356.jpg">
+	            <img src="<?php echo $Content->picture2; ?>">
 	          </section>
 	          <section id="slide3">
-	            <img src="/img/3.jpg">
+	            <img src="<?php echo $Content->picture3; ?>">
 	          </section>
 	          <section id="slide4">
-	            <img src="/img/IAN.jpg">
+	            <img src="<?php echo $Content->picture4; ?>">
 	          </section>
 	          <section id="slide5">
-	            <img src="/img/IAN.jpg">
+	            <img src="<?php echo $Content->picture5; ?>">
 	          </section>
 	        </div>
 	        <p class="arrow prev">
@@ -65,13 +65,13 @@
 
 	    <div class="description">
       		<h1><span>Title</span></h1>
-      		<p class="titlee">title</p>
+      		<p class="titlee"><?php echo $Content->title; ?></p>
 
       		<h1><span>Name</span></h1>
-      		<p class="na">name</p>
+      		<p class="na"><?php echo $Content->name; ?></p>
 
       		<h1><span>Introduction</span></h1>
-      		<p class="intro">introduction</p>
+      		<p class="intro"><?php echo $Content->description; ?></p>
 	    </div>
 
 	    <div class="btn-group" role="group">
