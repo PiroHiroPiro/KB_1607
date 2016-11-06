@@ -75,8 +75,12 @@
 	    </div>
 
 	    <div class="btn-group" role="group">
-	        <button type="button" class="btn button"><i class="fa fa-gift"></i>  応援する  <i class="fa fa-gift"></i></button>
-
+					<form method="POST" action="/content/support">
+					{!! csrf_field() !!}
+					<input type="hidden" name="content_id" value="<?php echo $Content->id; ?>">
+					<input type="hidden" name="money" value="2300">
+	        <button type="submit" class="btn button"><i class="fa fa-gift"></i>  応援する  <i class="fa fa-gift"></i></button>
+					</form>
 <!-- <a href="#" class="btn">Purchase Tickets</a> -->
 	    
 

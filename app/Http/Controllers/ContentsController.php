@@ -42,8 +42,9 @@ class ContentsController extends Controller
 						$support->content_id = $request->content_id;
 						$support->money = $request->money;
 						$support->save();
+						return redirect('/');
 				}else{
-
+						return redirect('/auth/login');
 				}
 		}
 }
