@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <div>
+        <button type="button" class="btn btn-default btn-circle btn-xl" onclick="location.href='/'">
+            <i class="fa fa-mail-reply"></i>
+        </button>
+    </div>
+
     <!-- login -->
     <div class="login_inner">
        <img class="logo" src="/img/logo-sample.png">
