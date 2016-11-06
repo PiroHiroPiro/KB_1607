@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo-around" href="#">
+                <a class="navbar-brand logo-around" href="">
                     <img alt="募金Tech" src="/img/logo-sample.png" id="logo">
                 </a>
             </div>
